@@ -73,7 +73,7 @@ var btn = document.createElement('btn');
 btn.id='btn';
 btn.className='btndiv';
 {/* <button class ='btn btn-danger' onclick='history.go(0)'>refresh</button> */}
-btn.innerHTML="<button class ='btn btn-danger'><a href='https://khushi-2002.github.io/basic-webdev/' style='color:white;'>Home Page</a></button><button class ='btn btn-danger' onclick='resett()'>reset</button>";
+btn.innerHTML="<button class ='btn btn-danger'><a href='https://khushiBhambri.github.io/basic-webdev/' style='color:white;'>Home Page</a></button><button class ='btn btn-danger' onclick='resett()'>reset</button>";
 var div = document.createElement('div');
 
 div.id = 'divbox';
