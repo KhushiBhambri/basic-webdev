@@ -1,3 +1,5 @@
-BASIC WEB PROJECTS
+BASIC WEB PROJECTS:
 
-[see my latest project on Github Cards](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
+1.[My latest project on Github Cards](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
+
+2.[Animated project using CSS animations](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
