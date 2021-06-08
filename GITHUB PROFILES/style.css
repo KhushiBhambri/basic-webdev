@@ -14,7 +14,7 @@ body {
   /* justify-content: center; */
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .user-form {
@@ -44,7 +44,9 @@ body {
 .user-form input:focus {
   outline: none;
 }
-
+.main {
+  justify-content: space-around;
+}
 .card {
   max-width: 800px;
   background-color: rgb(228, 83, 112);
@@ -55,6 +57,7 @@ body {
     0 15px 40px rgba(0, 0, 0, 0.1); rgb(243, 139, 101); */
   display: flex;
   padding: 3rem;
+  align-items: center;
   margin: 0 1.5rem;
 }
 
@@ -107,24 +110,25 @@ body {
   align-items: justify;
 }
 .page-footer {
-  background-color: rgb(228, 83, 112);
   bottom: 0;
   position: fixed;
 }
 .row {
-  padding: 0.2vw;
+  background-color: rgb(228, 83, 112);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.icondiv {
-  justify-content: space-around;
-}
+/* .icondiv {
+   padding: 0;
+   display: flex;
+  justify-content: center;  
+} */
 
 .icon {
   color: #2a2a2a;
-  margin: 0.5vw;
+  margin: 1vw;
 }
 
 .icon:hover {
@@ -136,27 +140,42 @@ body {
 }
 
 .copyright {
-  /* text-align: justify; */
+  background-color: rgb(228, 83, 112);
+  display: flex;
+  justify-content: space-around;
   cursor: pointer;
   color: white;
   font-size: 1em;
-  text-decoration: none;
-  margin-right: 0.5vh;
+  /* text-decoration: none;*/
 }
 
 @media (max-width: 500px) {
   .body {
     overflow: scroll;
   }
+  .user-form {
+    max-width: 400px;
+  }
+  .user-info h2 {
+    text-align: center;
+  }
   .card {
     flex-direction: column;
     align-items: center;
+    /* margin-bottom: 10px; */
   }
   .page-footer {
-    z-index: -1;
-    background-color: #2a2a2a;
+    position: relative;
   }
-  .user-form {
-    max-width: 400px;
+  .row {
+    background-color: #2a2a2a;
+    visibility: hidden;
+    /* display: none; */
+  }
+
+  .copyright {
+    display: flex;
+    background-color: #2a2a2a;
+    justify-content: space-around;
   }
 }
