@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <style>
+    body {
+      background: url('./images/galaxy.png') rgb(3, 3, 37);
+      background-size: 100%;
+      background-repeat: repeat-x, no-repeat;
+    }
+
+    .r1 {
+      height: 30vh;
+      position: absolute;
+      top: 45vh;
+      left: 30vw;
+    }
+
+    .cody {
+      height: 25vh;
+      position: absolute;
+      top: 50vh;
+      left: -20%;
+    }
+
+    .conv1,
+    .conv3 {
+      position: absolute;
+      height: 14vh;
+      width: 18vw;
+      top: 32vh;
+      left: 18vw;
+      opacity: 0;
+    }
+
+    .conv2,
+    .conv4 {
+      position: absolute;
+      height: 12vh;
+      width: 16vw;
+      top: 30vh;
+      left: 60vh;
+      opacity: 0;
+    }
+
+    .copyright {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+      color: navy;
+      font-size: 1em;
+    }
+  </style>
+  <body>
+    <div class="rocket">
+      <img src="./images/rocket.png" class="r1" />
+    </div>
+
+    <img src="./images/cody.png" class="cody" />
+    <img src="./images/c1.png" class="conv1" />
+    <img src="./images/c2.png" class="conv2" />
+    <img src="./images/c3.png" class="conv3" />
+    <img src="./images/c4.png" class="conv4" />
+  </body>
+  <a href="https://github.com/KhushiBhambr" class="copyright"
+    >© Khushi Bhambri
+  </a>
+</html>

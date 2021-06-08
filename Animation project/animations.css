@@ -1,0 +1,114 @@
+.rocket {
+  animation: item-stay-move 2s infinite ease-in-out;
+}
+
+.r1 {
+  animation: rocket-tocb 2s 27s ease-in-out forwards;
+}
+
+.cody {
+  animation: item-stay-move 2s infinite ease-in-out,
+    move-cody 2s 6s ease-in-out forwards,
+    cody-onboards 2s 25s ease-in-out forwards;
+}
+
+body {
+  animation: background-move 6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.conv1 {
+  animation: conversation 4s 8s ease-in-out,
+    item-stay-move 2s infinite ease-in-out;
+}
+
+.conv2 {
+  animation: conversation 4s 12s ease-in-out,
+    item-stay-move 2s infinite ease-in-out;
+}
+
+.conv3 {
+  animation: conversation 4s 16s ease-in-out,
+    item-stay-move 2s infinite ease-in-out;
+}
+
+.conv4 {
+  animation: conversation 4s 20s ease-in-out,
+    item-stay-move 2s infinite ease-in-out;
+}
+
+@keyframes cody-onboards {
+  0% {
+    left: 15%;
+  }
+  100% {
+    left: 25%;
+    opacity: 0;
+  }
+}
+
+@keyframes rocket-tocb {
+  20% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    top: -1000px;
+    left: 20vw;
+  }
+}
+
+@keyframes conversation {
+  40%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-cody {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+@keyframes background-move {
+  0% {
+    background-position: 100px 10%;
+  }
+  100% {
+    background-position: -5000px 10%;
+  }
+}
+
+@keyframes item-stay-move {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 100%;
+    background-repeat: repeat-x, repeat-y;
+  }
+  .conv1,
+  .conv3 {
+    height: 16vh;
+    width: 35vw;
+    top: 32vh;
+    left: 18vw;
+  }
+
+  .conv2,
+  .conv4 {
+    height: 15vh;
+    width: 28vw;
+    top: 30vh;
+    left: 50vh;
+  }
+}
