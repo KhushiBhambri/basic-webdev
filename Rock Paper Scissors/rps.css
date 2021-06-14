@@ -63,7 +63,7 @@ body {
 
 .page-foot {
   width: 100vw;
-  bottom: 0;
+  margin-bottom: 0;
   /*position: fixed; */
 }
 .row {
