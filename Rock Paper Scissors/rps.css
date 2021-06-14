@@ -3,7 +3,6 @@ body {
   color: azure;
 }
 .container {
-  /* border: 1px solid black; */
   margin: 5vh auto;
   width: 100vw;
 }
@@ -12,15 +11,38 @@ body {
   color: #2a2a2a;
   font-size: 2rem;
 }
-.inline {
+
+.flex-box {
   display: flex;
-  border: 1px solid black;
-  justify-content: space-between;
-}
-.inline h4 {
-  margin: 1vw;
+  /* border: 1px solid white; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px auto;
 }
 
+.rps img {
+  width: 12vw;
+  height: 32vh;
+  border: 1px solid black;
+}
+.flex-box img:hover {
+  box-shadow: 0px 5px 10px 0 white;
+}
+.ishadow {
+  box-shadow: 0px 4px 8px 0 white;
+}
+.borderpad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+}
+.borderpad img {
+  height: 32vh;
+  width: 12vw;
+  box-shadow: 0px 4px 8px 0 white;
+}
 .btn {
   background-color: #2a2a2a;
   display: flex;
@@ -29,32 +51,18 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
-.btn:hover {
+.Btn:hover {
   box-shadow: 0px 4px 8px white;
-  background-color: #b0b8b4ff;
 }
 .btndiv {
-  margin-left: 5vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-}
-
-.link {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-.link:hover {
-  color: WHITE;
-  text-decoration: none;
+  justify-content: center;
 }
 
 .page-foot {
   width: 100vw;
-  /* background-color: rgb(235, 131, 94); */
   bottom: 0;
   position: fixed;
 }
@@ -96,35 +104,52 @@ body {
   color: white;
 }
 
-@media (max-width: 770px) {
-  .inline h4 {
-    font-size: 1rem;
-  }
+@media (max-width: 740px) {
   .btn {
     font-size: 0.8rem;
   }
+  .rps img {
+    width: 15vw;
+    height: 32vh;
+    border: 1px solid black;
+  }
+  .borderpad h1 {
+    font-size: 1.5rem;
+  }
+  .borderpad img {
+    height: 32vh;
+    width: 15vw;
+    box-shadow: 0px 4px 8px 0 white;
+  }
 }
+
 @media (max-width: 500px) {
   .title {
     font-size: 1.5rem;
   }
-
-  .inline h4 {
-    font-size: 1rem;
+  .borderpad h1 {
+    font-size: 0.9rem;
   }
+
   .btn {
     font-size: 0.8rem;
   }
-  .btn span {
-    display: none;
-  }
-  .body {
-    overflow: scroll;
+
+  .rps img {
+    width: 20vw;
+    height: 32vh;
+    border: 1px solid black;
   }
 
-  .page-foot {
-    background-color: white;
+  .borderpad img {
+    height: 32vh;
+    width: 20vw;
+    box-shadow: 0px 4px 8px 0 white;
   }
+
+  /* .page-foot {
+    background-color: white;
+  } */
   .copyright {
     margin-left: 10vw;
     display: inline-block;

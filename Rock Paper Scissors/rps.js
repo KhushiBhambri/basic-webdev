@@ -1,15 +1,4 @@
- function age(){
-     var yob = prompt("enter year of birth ");
-     var a= (2021-yob)*365;
-     var h4=document.createElement('h4');
-     h4.setAttribute('id','AID');
-     var ans=document.createTextNode('YOU ARE '+a+' DAYS OLD.');
-     h4.appendChild(ans);
-     document.getElementById("result").appendChild(h4);
- }
- function reset(){
-     document.getElementById("AID").remove();
- }
+
  var images={
     'rock': document.getElementById('rock').src,
     'paper':document.getElementById('paper').src,
@@ -80,7 +69,10 @@ div.id = 'divbox';
 //div.innerHTML = 'Here!';
 div.className = 'borderpad';
 //document.body.appendChild(div);
-div.innerHTML = "<img class ='ishadow' src ='"+images[human]+"' height= 250 width=150 '><h1 style='color:"+message['color']+"; padding: 50px;'>"+message['text']+"</h1><img class ='ishadow' src='"+images[comp]+"'height= 250 width=150 style='box-shadow: 0px 4px 8px 0 rgb(204,39,39);' >";
+div.innerHTML = "<img src ='"+images[human]+
+        "'><h1 style='color:"+message['color']+
+        "; padding: 50px;'>"+message['text']+"</h1><img src='"+
+        images[comp]+"'>";
 //div.appendChild(yourimage);
 
 document.getElementById("rps container").appendChild(div);
@@ -94,13 +86,10 @@ function resett(){
     var div = document.createElement('div');
     div.id ='box';
     div.className = 'flex-box';
-    div.innerHTML ="<img id ='rock' src='"+images['rock']+"'onclick='rps(this)'><img id='paper' src='"+images['paper']+"'onclick='rps(this)'><img id='scissors' src='"+images['scissors']+"' onclick='rps(this)'>";
+    div.innerHTML = "<img id ='rock' src='"+images['rock']+
+                    "'onclick='rps(this)'><img id='paper' src='"+images['paper']+
+                    "'onclick='rps(this)'><img id='scissors' src='"+images['scissors']+"' onclick='rps(this)'>";
     document.getElementById("rps container").appendChild(div);
     
 }
-function generateCat(){
-    var i= document.createElement('img');
-    var d = document.getElementById('gencat');
-    i.src="http://thecatapi.com/api/images/get?format=src&type=gif";
-    d.append(i);
-}
+
