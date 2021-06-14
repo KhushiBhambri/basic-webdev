@@ -133,9 +133,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .page-foot {
+  /*.page-foot {
     background-color: white;
-  }
+  }*/
   .copyright {
     margin-left: 10vw;
     display: inline-block;
