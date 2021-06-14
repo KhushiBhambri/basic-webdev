@@ -64,7 +64,7 @@ body {
 .page-foot {
   width: 100vw;
   margin-bottom: 0;
-  /*position: fixed; */
+  position: fixed;
 }
 .row {
   padding: 0.2vw;
