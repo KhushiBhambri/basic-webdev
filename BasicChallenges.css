@@ -54,9 +54,10 @@ body {
 
 .page-foot {
   width: 100vw;
-  /* background-color: rgb(235, 131, 94); */
-  bottom: 0;
-  position: fixed;
+  bottom:0;
+  /* background-color: rgb(235, 131, 94);
+  position: fixed;*/
+   
 }
 .row {
   padding: 0.2vw;
@@ -122,9 +123,11 @@ body {
     overflow: scroll;
   }
 
-  .page-foot {
+/*  
+.page-foot {
     background-color: white;
   }
+*/
   .copyright {
     margin-left: 10vw;
     display: inline-block;
