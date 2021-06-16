@@ -5,7 +5,7 @@ body {
 .container {
   /* border: 1px solid black; */
   margin: 5vh auto;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .title {
   text-align: center;
@@ -54,12 +54,11 @@ body {
 
 .page-foot {
   width: 100vw;
-  bottom:0;
-  /* background-color: rgb(235, 131, 94);
-  position: fixed;*/
-   
+  bottom: 0;
+  background-color: #2a2a2a;
+  position: fixed;
 }
-.row {
+.roww {
   padding: 0.2vw;
   display: flex;
   justify-content: space-around;
@@ -73,7 +72,7 @@ body {
 }
 
 .icon {
-  color: #2a2a2a;
+  color: #b0b8b4ff;
   margin: 0.5vw;
 }
 
@@ -86,7 +85,7 @@ body {
 
 .copyright {
   align-items: center;
-  color: #2a2a2a;
+  color: aliceblue;
   font-size: 1em;
   text-decoration: none;
   margin-right: 0.5vw;
@@ -95,6 +94,7 @@ body {
 .copyright:hover {
   text-decoration: none;
   color: white;
+  font-size: large;
 }
 
 @media (max-width: 770px) {
@@ -123,12 +123,12 @@ body {
     overflow: scroll;
   }
 
-/*  
-.page-foot {
+  .page-foot {
     background-color: white;
   }
-*/
+
   .copyright {
+    color: #2a2a2a;
     margin-left: 10vw;
     display: inline-block;
     justify-content: space-around;

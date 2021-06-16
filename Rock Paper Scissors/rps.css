@@ -4,7 +4,8 @@ body {
 }
 .container {
   margin: 5vh auto;
-  width: 100vw;
+  text-align: center;
+  font-size: medium;
 }
 .title {
   text-align: center;
@@ -63,11 +64,11 @@ body {
 
 .page-foot {
   width: 100vw;
-  margin-bottom: 0;
+  bottom: 0;
   position: fixed;
 }
-.row {
-  padding: 0.2vw;
+.roww {
+  /* padding: 0.2vw; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -108,6 +109,9 @@ body {
   .btn {
     font-size: 0.8rem;
   }
+  .comment {
+    display: none;
+  }
   .rps img {
     width: 15vw;
     height: 32vh;
@@ -147,9 +151,10 @@ body {
     box-shadow: 0px 4px 8px 0 white;
   }
 
-  /* .page-foot {
+  .page-foot {
     background-color: white;
-  } */
+    position: fixed;
+  }
   .copyright {
     margin-left: 10vw;
     display: inline-block;
