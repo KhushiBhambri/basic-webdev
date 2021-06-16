@@ -104,6 +104,9 @@ body {
   .btn {
     font-size: 0.8rem;
   }
+  .comme {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .title {
