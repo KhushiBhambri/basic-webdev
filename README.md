@@ -11,10 +11,12 @@
    ### 4.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
    ##### A simple CSS space project with animations. 
    ### 5.[Cat Generator](https://khushibhambri.github.io/basic-webdev/Cat%20Generator/cat-gen.html)
-   ##### Generate Cat Images and GIFs via API calls.
+   ##### Generate Cat Images and GIFs via API.
+   ### 6.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
+   ##### Generate Tips/Advice slip using API calls.
    ### 6.[Portfolio](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
    ##### Have a look at my portfolio here and get to know about me.
     -->
    
 
-
+   https://think-start.github.io/basic-webdev/Tips/script.html
