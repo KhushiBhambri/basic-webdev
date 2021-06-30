@@ -15,7 +15,8 @@
     <title>Daily Tips</title>
   </head>
   <body>
-    <script>
+    
+    <script>      
       fetch('https://api.adviceslip.com/advice')
         .then((data) => {
           //    console.log(data);
@@ -28,8 +29,8 @@
           errorcard('there is an error ${error}')
         })
 
-      function createCard(data) {
-        const cardhtml = `
+ function createCard(data) {
+     const cardhtml = `
     <div class="card">
  
     <div class="user-info">
@@ -40,29 +41,21 @@
     </div>
   </div>
   `
-        main.innerHTML = cardhtml
-      }
-      function errorCard(msg) {
-        const cardHTML = `
-      <div class="card">
-          <h1>${msg}</h1>
-      </div>
+  main.innerHTML = cardhtml
+  }
+      
+ function errorCard(msg) {
+ const cardHTML = `
+  <div class="card">
+      <h1>${msg}</h1>
+  </div>
   `
-        main.innerHTML = cardHTML
-      }
+  main.innerHTML = cardHTML
+   }
+      
     </script>
 
     <h2>Tip of the Day is Here!</h2>
-    <!-- <form class="user-form" id="form">
-      <input
-        type="text"
-        id="search"
-        placeholder="Search a Github User"
-        autocomplete="off"
-      />
-      <button class="btn-primary">hi</button>
-    </form> -->
-
     <main id="main">
       <!-- <img
         src="https://randomuser.me/api/portraits/women/17.jpg"
@@ -109,11 +102,5 @@
         >© Khushi Bhambri
       </a>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </body>
 </html>
