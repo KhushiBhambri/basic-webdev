@@ -6,18 +6,20 @@
    ##### Get user profile cards for Github users by username.
    ### 2.[ Piano](https://khushibhambri.github.io/Piano-keyboard/)
    ##### A simple Musical Piano Keyboard. 
-   ### 3.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
+   ### 3.[Quiz App](https://khushibhambri.github.io/basic-webdev/Quiz%20App/quiz.html)
+   ##### Generate a Quiz test and scores based on selected topic and difficulty.
+   ### 4.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
    #####  Play the game against Computer in the leisure time.
-   ### 4.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
+   ### 5.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
    ##### A simple CSS space project with animations. 
-   ### 5.[Cat Generator](https://khushibhambri.github.io/basic-webdev/Cat%20Generator/cat-gen.html)
+   ### 6.[Cat Generator](https://khushibhambri.github.io/basic-webdev/Cat%20Generator/cat-gen.html)
    ##### Generate Cat Images and GIFs via API.
-   ### 6.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
+   ### 7.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
    ##### Generate Tips/Advice slip using API calls.
-   ### 6.[Portfolio](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
+   ### 8.[Portfolio](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
    ##### Have a look at my portfolio here and get to know about me.
  
    
-
+   https://think-start.github.io/basic-webdev/Quiz%20App/quiz.html
    https://think-start.github.io/basic-webdev/Tips/script.html
    -->
