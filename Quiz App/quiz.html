@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div id="entire">
+      <h2 style="text-align: center">Start your Quiz!</h2>
+      <form class="user-form" id="form">
+        <select id="Topic">
+          <option>Choose Topic</option>
+          <option value="27">Animals</option>
+          <option value="31">Anime</option>
+          <option value="10">Books</option>
+          <option value="26">Celebrities</option>
+          <option value="18">Computers</option>
+          <option value="11">Films</option>
+          <option value="30">Gadgets</option>
+          <option value="9">General Knowledgs</option>
+          <option value="23">History</option>
+          <option value="19">Maths</option>
+          <option value="12">Music</option>
+          <option value="17">Science & Nature</option>
+          <option value="21">Sports</option>
+          <option value="28">Vehichles</option>
+        </select>
+        <select id="diffi">
+          <option>Choose Difficulty</option>
+          <option>easy</option>
+          <option>medium</option>
+          <option>hard</option>
+        </select>
+        <button class="btn" type="button" onclick="difficulty()">
+          Start Test!
+        </button>
+      </form>
+
+      <main id="main"></main>
+    </div>
+
+    <div class="page-foot row" style="width: 100%">
+      <div class="connections">
+        <h4 style="color: #2a2a2a">My Social Networks!</h4>
+        <div class="icondiv">
+          <a class="fb-ic icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a class="ins-ic icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a class="gplus-ic icon">
+            <i class="fab fa-google-plus"></i>
+          </a>
+
+          <a class="li-ic icon" href="https://medium.com/@KhushiBhambri">
+            <i class="fab fa-medium-m"></i>
+          </a>
+          <a
+            class="li-ic icon"
+            href="https://www.linkedin.com/in/khushibhambri/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a class="li-ic icon" href="https://github.com/KhushiBhambri">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a class="tw-ic icon" href="https://twitter.com/Khushi05680098">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <a href="" class="copyright">© Khushi Bhambri </a>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
