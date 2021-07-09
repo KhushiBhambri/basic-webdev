@@ -16,7 +16,7 @@
    ##### Generate Cat Images and GIFs via API.
    ### 7.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
    ##### Generate Tips/Advice slip using API calls.
-   ### 8.[Portfolio](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
+   ### 8.[Portfolio](https://khushibhambri.github.io/Portfolio/)
    ##### Have a look at my portfolio here and get to know about me.
  
    
