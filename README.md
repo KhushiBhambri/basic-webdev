@@ -20,6 +20,5 @@
    ##### Have a look at my portfolio here and get to know about me.
  
    
-   https://think-start.github.io/basic-webdev/Quiz%20App/quiz.html
-   https://think-start.github.io/basic-webdev/Tips/script.html
+
   
