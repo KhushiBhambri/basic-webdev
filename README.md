@@ -1,4 +1,4 @@
-<!-- # [View All Projects On WebDev](https://khushibhambri.github.io/basic-webdev/)
+# [View All Projects On WebDev](https://khushibhambri.github.io/basic-webdev/)
    
 <h2 align="center">  Here is the list of my Basic Web Projects:</h2>
 
@@ -22,4 +22,4 @@
    
    https://think-start.github.io/basic-webdev/Quiz%20App/quiz.html
    https://think-start.github.io/basic-webdev/Tips/script.html
-   -->
+  
