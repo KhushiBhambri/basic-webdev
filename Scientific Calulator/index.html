@@ -1,0 +1,245 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scientific Calculator</title>
+  </head>
+  <body>
+    <!-- project starter -->
+    <form name="scientific_calculator" id="form">
+      <h2>Scientific Calculator</h2>
+
+      <table cellspacing="0" cellpadding="1">
+        <tr>
+          <td colspan="5" align="center">
+            <input
+              name="display"
+              id="displayd"
+              class="sc"
+              value="0"
+              size="44"
+              maxlength="25"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value="Clear"
+              onclick="this.form.display.value = 0 "
+            />
+          </td>
+          <td align="center" colspan="2">
+            <input
+              type="button"
+              value="      Cancel     "
+              onclick="deleteChar(this.form.display)"
+            />
+          </td>
+          <td align="center" colspan="2">
+            <input
+              type="button"
+              value="           Ok          "
+              name="Enter"
+              onclick="if (checkNum(this.form.display.value)) { compute(this.form) }"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value=" exp "
+              onclick="if (checkNum(this.form.display.value)) { exp(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  7  "
+              onclick="add_value(this.form.display, '7')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  8  "
+              onclick="add_value(this.form.display, '8')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  9  "
+              onclick="add_value(this.form.display, '9')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   /   "
+              onclick="add_value(this.form.display, '/')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value="  ln   "
+              onclick="if (checkNum(this.form.display.value)) { ln(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  4  "
+              onclick="add_value(this.form.display, '4')"
+            />
+          </td>
+
+          <td align="center">
+            <input
+              type="button"
+              value="  5  "
+              onclick="add_value(this.form.display, '5')"
+            />
+          </td>
+
+          <td align="center">
+            <input
+              type="button"
+              value="  6  "
+              onclick="add_value(this.form.display, '6')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   *   "
+              onclick="add_value(this.form.display, '*')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value=" sqrt "
+              onclick="if (checkNum(this.form.display.value)) { sqrt(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  1  "
+              onclick="add_value(this.form.display, '1')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  2  "
+              onclick="add_value(this.form.display, '2')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  3  "
+              onclick="add_value(this.form.display, '3')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   -   "
+              onclick="add_value(this.form.display, '-')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value="  sq  "
+              onclick="if (checkNum(this.form.display.value)) { square(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="  0  "
+              onclick="add_value(this.form.display, '0')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   .  "
+              onclick="add_value(this.form.display, '.')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value=" +/- "
+              onclick="changeSign(this.form.display)"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   +  "
+              onclick="add_value(this.form.display, '+')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="button"
+              value="   (    "
+              onclick="add_value(this.form.display, '(')"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="cos"
+              onclick="if (checkNum(this.form.display.value)) { cos(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value=" sin "
+              onclick="if (checkNum(this.form.display.value)) { sin(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value=" tan"
+              onclick="if (checkNum(this.form.display.value)) { tan(this.form) }"
+            />
+          </td>
+          <td align="center">
+            <input
+              type="button"
+              value="   )   "
+              onclick="add_value(this.form.display, ')')"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div class="page-foot row" style="width: 100%">
+      <a href="" class="copyright">© Khushi Bhambri </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
