@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(184, 223, 223) !important;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;
+  color: rgb(120, 152, 180);
+}
+
+.buttons {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+
+.keys .label {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+
+.white {
+  background-color: #ffffff;
+  color: rgb(32, 32, 32);
+  z-index: 0;
+  text-shadow: 0px 1px 1px rgb(32 32 32 / 50%);
+  height: 45vh;
+  width: 10vw;
+  max-width: 60px;
+  position: relative;
+  left: 2vw;
+  margin: 8vh 0vh;
+}
+.black {
+  background-color: rgb(32, 32, 32);
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 0px -1px 1px rgb(255 255 255 / 50%);
+  height: 30vh;
+  max-width: 40px;
+  width: 6vw;
+  position: absolute;
+  margin: 8vh 0vh;
+}
+.keys {
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: end;
+  border: 1px solid rgba(32, 32, 32, 0.2);
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 1px rgb(32 32 32 / 20%);
+  transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+  -webkit-transition: margin 0.05s ease, background-color 0.05s ease,
+    box-shadow 0.05s ease;
+}
+
+.keys:hover {
+  opacity: 0.8;
+}
+/* coral  navy crimson*/
+/* #5bccf6 -- sky */
+/* #2b6777 #c8d8e4 #ffffff #f2f2f2 #52ab98 -- green white grey */
+
+.page-foot {
+  background-color: rgb(90, 201, 201);
+  bottom: 0;
+  position: fixed;
+}
+.row {
+  padding: 0.2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.connections {
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  color: #2a2a2a;
+  margin: 0.5vw;
+}
+
+.icon:hover {
+  color: white;
+  /* font-size: 1.5em; */
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copyright {
+  align-items: center;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 0.5vw;
+}
+@media (max-width: 850px) {
+  .S4 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .body {
+    overflow: scroll;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-foot {
+    background-color: #2a2a2a;
+  }
+  .copyright {
+    margin-left: 10vw;
+    display: inline-block;
+    justify-content: space-around;
+  }
+  .connections {
+    display: none;
+  }
+  .user-form {
+    max-width: 400px;
+  }
+}
