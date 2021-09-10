@@ -1,6 +1,7 @@
 # [View All Projects On WebDev](https://khushibhambri.github.io/basic-webdev/)
    
-<h2 align="center">  Here is the list of my Basic Web Projects:</h2>
+   <h2 align="center">  Here is the list of my Basic Web Projects:</h2>
+   
    ### 1.[Quiz App](https://khushibhambri.github.io/basic-webdev/Quiz%20App/quiz.html)
    ##### Generate a Quiz test and scores based on selected topic and difficulty.
    ### 2.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
