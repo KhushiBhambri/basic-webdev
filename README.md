@@ -10,7 +10,7 @@
    ##### Scientific Calculations usinh JS functions.
    ### 4.[ Github Cards](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
    ##### Get user profile cards for Github users by username.
-   ### 5.[ Piano](https://khushibhambri.github.io/basic-webdev/Piano/index.html)
+   ### 5.[ Piano](https://kb-piano.netlify.app/)
    ##### A simple Musical Piano Keyboard. 
    ### 6.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
    #####  Play the game against Computer in the leisure time.
