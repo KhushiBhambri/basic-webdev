@@ -2,13 +2,13 @@
    
    <h2 align="center">  Here is the list of my Basic Web Projects:</h2>
    
-   ### 1.[Quiz App](https://khushibhambri.github.io/basic-webdev/Quiz%20App/quiz.html)
+   ### 1.[Quiz App](https://kb-quiz.netlify.app/)
    ##### Generate a Quiz test and scores based on selected topic and difficulty.
-   ### 2.[Daily Tips](https://khushibhambri.github.io/basic-webdev/Tips/script.html)
+   ### 2.[Daily Tips]https://kb-tips.netlify.app/)
    ##### Generate Tips/Advice slip using API calls.
    ### 3.[Scientific Calculator](https://khushibhambri.github.io/basic-webdev/Scientific%20Calulator/index.html)
    ##### Scientific Calculations usinh JS functions.
-   ### 4.[ Github Cards](https://khushibhambri.github.io/basic-webdev/GITHUB%20PROFILES/index.html)
+   ### 4.[ Github Cards](https://kb-githubcards.netlify.app/)
    ##### Get user profile cards for Github users by username.
    ### 5.[ Piano](https://kb-piano.netlify.app/)
    ##### A simple Musical Piano Keyboard. 
