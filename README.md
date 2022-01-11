@@ -4,7 +4,7 @@
    
    ### 1.[Quiz App](https://kb-quiz.netlify.app/)
    ##### Generate a Quiz test and scores based on selected topic and difficulty.
-   ### 2.[Daily Tips]https://kb-tips.netlify.app/)
+   ### 2.[Daily Tips](https://kb-tips.netlify.app/)
    ##### Generate Tips/Advice slip using API calls.
    ### 3.[Scientific Calculator](https://khushibhambri.github.io/basic-webdev/Scientific%20Calulator/index.html)
    ##### Scientific Calculations usinh JS functions.
