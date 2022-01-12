@@ -15,9 +15,9 @@
     <title>Daily Tips</title>
   </head>
   <body>
-    
-    <script>      
-      fetch('https://api.adviceslip.com/advice')
+    <script>
+      // fetch('https://api.adviceslip.com/advice')
+      fetch('https://zenquotes.io/api/today')
         .then((data) => {
           //    console.log(data);
           return data.json()
@@ -26,38 +26,36 @@
           createCard(jsondata.slip.advice)
         })
         .catch((error) => {
-          errorcard('there is an error ${error}')
+          errorcard('there is an error' + { error })
         })
 
- function createCard(data) {
-     const cardhtml = `
-    <div class="card">
- 
-    <div class="user-info">
-      <center>
-       <h1>Tip of the Day is Here!</h1>
-       <h2>Note it Down 📝</h2>
-      <p>${data}</p>
-      <div id="repos"></div>
-    </center>
-    </div>
-  </div>
-  `
-  main.innerHTML = cardhtml
-  }
-      
- function errorCard(msg) {
- const cardHTML = `
-  <div class="card">
-      <h1>${msg}</h1>
-  </div>
-  `
-  main.innerHTML = cardHTML
-   }
-      
+      function createCard(data) {
+        const cardhtml = `
+        <div class="card">
+
+        <div class="user-info">
+          <center>
+           <h1>Tip of the Day is Here!</h1>
+           <h2>Note it Down 📝</h2>
+          <p>${data}</p>
+          <div id="repos"></div>
+        </center>
+        </div>
+      </div>
+      `
+        main.innerHTML = cardhtml
+      }
+
+      function errorcard(msg) {
+        const cardHTML = `
+      <div class="card">
+          <h1>${msg}</h1>
+      </div>
+      `
+        main.innerHTML = cardHTML
+      }
     </script>
 
-   
     <main id="main">
       <!-- <img
         src="https://randomuser.me/api/portraits/women/17.jpg"
