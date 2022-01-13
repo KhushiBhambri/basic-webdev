@@ -12,50 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript" src="Quotes.js"></script>
     <title>Daily Tips</title>
   </head>
   <body>
-    <script>
-      // fetch('https://api.adviceslip.com/advice')
-      fetch('https://zenquotes.io/api/today')
-        .then((data) => {
-          //    console.log(data);
-          return data.json()
-        })
-        .then((jsondata) => {
-          createCard(jsondata.slip.advice)
-        })
-        .catch((error) => {
-          errorcard('there is an error' + { error })
-        })
-
-      function createCard(data) {
-        const cardhtml = `
-        <div class="card">
-
-        <div class="user-info">
-          <center>
-           <h1>Tip of the Day is Here!</h1>
-           <h2>Note it Down 📝</h2>
-          <p>${data}</p>
-          <div id="repos"></div>
-        </center>
-        </div>
-      </div>
-      `
-        main.innerHTML = cardhtml
-      }
-
-      function errorcard(msg) {
-        const cardHTML = `
-      <div class="card">
-          <h1>${msg}</h1>
-      </div>
-      `
-        main.innerHTML = cardHTML
-      }
-    </script>
-
     <main id="main">
       <!-- <img
         src="https://randomuser.me/api/portraits/women/17.jpg"
@@ -98,9 +58,67 @@
           </a>
         </div>
       </div>
-      <a onclick="getUser('KHUSHIBHAMBRI')" class="copyright"
-        >© Khushi Bhambri
-      </a>
+      <a onclick="" class="copyright">© Khushi Bhambri </a>
     </div>
+
+    <script>
+      function Hash(d, m, y) {
+        console.log(d, m, y)
+        var x = d * 1000000 + m * 10000 + y
+        x = x % 1604
+        return x
+      }
+      // fetch('https://zenquotes.io/api/today')
+
+      // fetch('https://api.adviceslip.com/advice')
+      //   .then((data) => {
+      //     //console.log(data)
+      //     return data.json()
+      //   })
+      //   .then((jsondata) => {
+      //     createCard(jsondata.slip.advice)
+      //   })
+      //   .catch((error) => {
+      //     console.log(error)
+      //     errorcard('there is an error' + { error })
+      //   })
+
+      function createCard(data, author) {
+        const url = 'http://google.com/search?q=' + author.split(' ').join('')
+        const cardhtml = `
+        <div class="card">
+
+        <div class="user-info">
+          <center>
+           <h1>Tip of the Day is Here!</h1>
+           <h4>Note it Down 📝</h4>
+          <p>${data}</p>
+          <div id="author">By: <a href=${url} target="_blank">${author}</a></div>
+        </center>
+        </div>
+      </div>
+      `
+        main.innerHTML = cardhtml
+      }
+
+      function errorcard(msg) {
+        const cardHTML = `
+      <div class="card">
+          <h1>${msg}</h1>
+      </div>
+      `
+        main.innerHTML = cardHTML
+      }
+
+      var mydata = Quotes
+      const date = new Date()
+      var m = date.getMonth()
+      var y = date.getFullYear()
+      var d = date.getDate()
+
+      var val = Hash(d, m + 1, y)
+      console.log(val, mydata[val])
+      createCard(mydata[val].text, mydata[val].author)
+    </script>
   </body>
 </html>
