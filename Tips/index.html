@@ -84,7 +84,7 @@
       //   })
 
       function createCard(data, author) {
-        const url = 'http://google.com/search?q=' + author.split(' ').join('')
+        const url = 'http://google.com/search?q=' + author.split(' ').join('+')
         const cardhtml = `
         <div class="card">
 
