@@ -21,6 +21,9 @@
   
    ## [Portfolio](https://khushibhambri.github.io/khushibhambri/)
    ##### Have a look at my portfolio here and get to know about me.
+   
+   ## [More Projects](https://kb-projects.netlify.app/)
+   ##### Have a look at my Other Projects.
  
    
 
