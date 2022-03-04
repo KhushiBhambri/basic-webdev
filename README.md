@@ -14,11 +14,11 @@
    ##### A simple Musical Piano Keyboard. 
    ### 6.[Weather App](https://kb-weather.netlify.app/)
    ##### A Weather App using APIs. 
-   ### 6.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
+   ### 7.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
    #####  Play the game against Computer in the leisure time.
-   ### 7.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
+   ### 8.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
    ##### A simple CSS space project with animations. 
-   ### 8.[Cat Generator](https://khushibhambri.github.io/basic-webdev/Cat%20Generator/cat-gen.html)
+   ### 9.[Cat Generator](https://khushibhambri.github.io/basic-webdev/Cat%20Generator/cat-gen.html)
    ##### Generate Cat Images and GIFs via API.
   
    ## [Portfolio](https://khushibhambri.github.io/khushibhambri/)
