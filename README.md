@@ -12,6 +12,8 @@
    ##### Get user profile cards for Github users by username.
    ### 5.[ Piano](https://kb-piano.netlify.app/)
    ##### A simple Musical Piano Keyboard. 
+   ### 6.[Weather App](https://kb-weather.netlify.app/)
+   ##### A Weather App using APIs. 
    ### 6.[Rock Paper Scissors](https://khushibhambri.github.io/basic-webdev/Rock%20Paper%20Scissors/rps.html)
    #####  Play the game against Computer in the leisure time.
    ### 7.[Space Animation](https://khushibhambri.github.io/basic-webdev/Animation%20project/animation_project.html)
